@@ -1,0 +1,35 @@
+
+.RegisterContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh ;  
+    background-color: lightgray;
+    /* background-color: black */
+}
+
+
+form { 
+    color: white;
+    width: 350px;
+    padding: 30px;
+    background-color: #4CAF50;
+    border-radius: 15px;
+    font-size: 15px;
+}
+
+
+
+form > div  { 
+    margin-top: 8px;
+}
+
+
+button { 
+    margin-top: 10px;
+}
+
+
+input.ng-invalid.ng-touched { 
+    border: 2px solid red   ;
+}

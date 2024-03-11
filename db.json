@@ -1,0 +1,94 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "saeed",
+      "lastName": "zakeri",
+      "email": "saeed.zakeri1364@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": 2,
+      "name": "sina",
+      "lastName": "zakeri",
+      "email": "sina.zakeri1366@gmail.com",
+      "password": "456"
+    },
+    {
+      "id": 3,
+      "name": "vahid",
+      "lastName": "zakeri",
+      "email": "vahid.zakeri1362@gmail.com",
+      "password": "789"
+    },
+    {
+      "id": 4,
+      "name": "sorosh",
+      "lastName": "zakeri",
+      "email": "sorosh.zakeri1372@gmail.com",
+      "password": "456"
+    }
+  ],
+
+  "bedrooms": [
+    {
+      "id": 0,
+      "title": "All bedroom"
+    },
+    {
+      "id": 1,
+      "title": "1 bedroom"
+    },
+    {
+      "id": 2,
+      "title": "2 bedroom"
+    },
+    {
+      "id": 3,
+      "title": "3 bedroom"
+    },
+    {
+      "id": 4,
+      "title": "4 bedroom"
+    }
+  ] ,
+  "prices" : [
+    {
+      "id": 0 ,
+      "title" : "All prices",
+      "from" : 0,
+      "to" : 1000
+    },
+    {
+      "id": 1 ,
+      "title" : "from 0 to 200",
+      "from" : 0,
+      "to" : 200
+    },
+    {
+      "id": 2 ,
+      "title" : "from 200 to 400",
+      "from" : 200,
+      "to" : 400
+    },
+    {
+      "id": 3 ,
+      "title" : "from 400 to 600",
+      "from" : 400,
+      "to" : 600
+    },
+    {
+      "id": 4 ,
+      "title" : "from 600 to 800",
+      "from" : 600,
+      "to" : 800
+    },
+    {
+      "id": 5 ,
+      "title" : "from 800 to 1000",
+      "from" : 800,
+      "to" : 1000
+    }
+    
+  ]
+}

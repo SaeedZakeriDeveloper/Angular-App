@@ -1,0 +1,15 @@
+
+<div class="m-4 p-1 main" >
+    <div>
+    <label for="" class="form-label"></label>
+    <input type="text" placeholder="search" class="form-control" [(ngModel)]="bedroomFilter"  >    
+</div>
+<div>
+    <ul class="list-group">
+        <li  *ngFor="let bedroom of bedrooms | bedroom:bedroomFilter "
+         (click)="setCurrentBedroom(bedroom)"  [class]="getCurrentBedroomClass(bedroom)" >{{bedroom.title}}</li>
+    </ul>
+</div>
+</div>
+
+

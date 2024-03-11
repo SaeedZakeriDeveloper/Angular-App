@@ -1,0 +1,16 @@
+<div style="position: relative;">
+    <div class="homeContainer">
+    </div>
+    <div class="p-2  homeContainerChild" *ngIf="!isAuthenticated">
+        <button class="btn btn-primary m-2 " (click)="onLoginButtonClick()">Login</button>
+        <button class="btn btn-primary m-2 " (click)="onRegisterButtonClick()">Register</button>
+    </div>
+    <div *ngIf="isAuthenticated" class="wellcomeNote">
+        <h1>
+            <span>Hi</span>
+            <span>{{currentUser}}</span>
+        </h1>
+    </div>
+</div>
+
+

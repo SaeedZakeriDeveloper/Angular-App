@@ -1,0 +1,13 @@
+<div class="m-4 p-1 main">
+    <div>
+        <label for="" class="form-label"></label>
+        <input type="text" placeholder="search" class="form-control" [(ngModel)]="priceFilter">
+    </div>
+
+    <div>
+        <ul class="list-group">
+            <li *ngFor="let price of prices | price : priceFilter" (click)="setCurrentPrice(price)"
+            [class]="setCurrentPriceClass(price)">{{price.title}}</li>
+        </ul>
+    </div>
+</div>
