@@ -1,10 +1,24 @@
 <div>
     <div class="row">
         <div class="col-3 bed">
-            <app-bedroom></app-bedroom>
-            <app-price></app-price>
+            <app-bedroom (onClick)="onBedroomClick($event)"></app-bedroom>
+            <app-price (onClick)="onPriceClick($event)"></app-price>
         </div>
-        <div class="col-9 house">
+
+        <div class="col-8 house" >
+            <input type="text" class="form-control" [(ngModel)]="serachPanelAllHouse" (input)="searchPanelFilterChange(serachPanelAllHouse)">
+                <div class="showHouse" >
+                    <div  *ngFor="let house of filteredHouse" class="showHouseItem" style="background-color: black;" >
+                        <img src="{{house.imagePath}}" class="card-img-top" width="320" height="200">
+                        <ul  class="list-group-item list-group-item-action flex-column align-items-start m-2" style="color: white;" >
+                            <li class="list-group-item d-flex w-100 justify-content-between">Code: {{house.code}}</li>
+                            <li class="list-group-item d-flex w-100 justify-content-between">Size: {{house.size}}</li>
+                            <li class="list-group-item d-flex w-100 justify-content-between">Bedrooms: {{house.bedrooms}}</li>
+                            <li class="list-group-item d-flex w-100 justify-content-between">Bathrooms: {{house.bathrooms}}</li>
+                            <li class="list-group-item d-flex w-100 justify-content-between">Price: ${{house.price }}</li>
+                        </ul>
+                    </div>
+                </div>         
         </div>
     </div>
 </div>

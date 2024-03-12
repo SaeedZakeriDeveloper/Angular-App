@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { IPrice } from 'src/app/interfaces/IPrice';
 import { PriceService } from 'src/app/services/price.service';
 
@@ -12,8 +12,10 @@ export class PriceComponent implements OnInit{
   priceFilter : string = ""
   prices: IPrice[] = [] 
   currentPrice  : IPrice = {id : 0 , title : "All prices" ,  from : 0 , to  : 100 }
+  @Output() onClick  :  EventEmitter<IPrice> = new EventEmitter
 
   constructor(private priceService :  PriceService){}
+
 
 ngOnInit(): void {
 this.priceService.getAllList().subscribe((res)=>{
@@ -22,6 +24,7 @@ this.priceService.getAllList().subscribe((res)=>{
 
 setCurrentPrice(price  :  IPrice){
    this.currentPrice = price
+   this.onClick.emit(price)
 }
 
 setCurrentPriceClass(price :  IPrice) { 

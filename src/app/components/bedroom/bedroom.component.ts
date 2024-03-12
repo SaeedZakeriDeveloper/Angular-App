@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { IBedroom } from 'src/app/interfaces/IBedroom';
 import { BedroomService } from 'src/app/services/bedroom.service';
 
@@ -11,6 +11,8 @@ export class BedroomComponent implements OnInit{
   bedrooms :  IBedroom [] =[] 
   bedroomFilter = "" 
   curretBedroom : IBedroom = { id : 0  , title :""}
+
+  @Output() onClick : EventEmitter <number> = new EventEmitter
   constructor(private bedroomService :  BedroomService){}
 
 
@@ -23,15 +25,14 @@ ngOnInit(): void {
 
 setCurrentBedroom(bedroom : IBedroom) { 
   this.curretBedroom = bedroom
+  this.onClick.emit(bedroom.id)
 }
 
 getCurrentBedroomClass(bedroom: IBedroom) {
-  
-  if (bedroom.id == this.curretBedroom?.id) {
+  if (bedroom.id === this.curretBedroom?.id) {
     return "list-group-item cursorPointer active";
   } else {
     return "list-group-item cursorPointer";
   }
 }
-
 }
