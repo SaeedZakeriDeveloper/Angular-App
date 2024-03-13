@@ -17,7 +17,9 @@ import { FooterComponent } from './components/footer/footer.component';
 import { BedroomComponent } from './components/bedroom/bedroom.component';
 import { PriceComponent } from './components/price/price.component';
 import { BedroomPipe } from './pipe/bedroom.pipe';
-import { PricePipe } from './pipe/price.pipe'
+import { PricePipe } from './pipe/price.pipe';
+import { EditUserComponent } from './components/edit-user/edit-user.component'
+import {DxButtonModule, DxLoadIndicatorModule} from "devextreme-angular";
 
 @NgModule({
   declarations: [
@@ -35,14 +37,18 @@ import { PricePipe } from './pipe/price.pipe'
     BedroomComponent,
     PriceComponent,
     BedroomPipe,
-    PricePipe
+    PricePipe,
+    EditUserComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    DxLoadIndicatorModule,
+    DxButtonModule
+    
 
   ],
   providers: [],

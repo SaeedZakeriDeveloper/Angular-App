@@ -22,3 +22,10 @@
         </div>
     </div>
 </div>
+
+<dx-load-indicator
+  [(visible)]="isLoadIndicatorVisible"
+  [height]="140"
+  [width]="140"
+  [elementAttr]="{ style: 'position: absolute; top: calc(50vh - 70px); left: calc(50vw - 70px) ;' }">
+</dx-load-indicator>

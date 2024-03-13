@@ -2,7 +2,7 @@
   "users": [
     {
       "id": 1,
-      "name": "saeed",
+      "name": "saeeddddddd",
       "lastName": "zakeri",
       "email": "saeed.zakeri1364@gmail.com",
       "password": "123"
@@ -29,7 +29,6 @@
       "password": "456"
     }
   ],
-
   "bedrooms": [
     {
       "id": 0,
@@ -51,44 +50,383 @@
       "id": 4,
       "title": "4 bedroom"
     }
-  ] ,
-  "prices" : [
+  ],
+  "prices": [
     {
-      "id": 0 ,
-      "title" : "All prices",
-      "from" : 0,
-      "to" : 1000
+      "id": 0,
+      "title": "All prices",
+      "from": 0,
+      "to": 1000
     },
     {
-      "id": 1 ,
-      "title" : "from 0 to 200",
-      "from" : 0,
-      "to" : 200
+      "id": 1,
+      "title": "from 0 to 200",
+      "from": 0,
+      "to": 200
     },
     {
-      "id": 2 ,
-      "title" : "from 200 to 400",
-      "from" : 200,
-      "to" : 400
+      "id": 2,
+      "title": "from 200 to 400",
+      "from": 200,
+      "to": 400
     },
     {
-      "id": 3 ,
-      "title" : "from 400 to 600",
-      "from" : 400,
-      "to" : 600
+      "id": 3,
+      "title": "from 400 to 600",
+      "from": 400,
+      "to": 600
     },
     {
-      "id": 4 ,
-      "title" : "from 600 to 800",
-      "from" : 600,
-      "to" : 800
+      "id": 4,
+      "title": "from 600 to 800",
+      "from": 600,
+      "to": 800
     },
     {
-      "id": 5 ,
-      "title" : "from 800 to 1000",
-      "from" : 800,
-      "to" : 1000
+      "id": 5,
+      "title": "from 800 to 1000",
+      "from": 800,
+      "to": 1000
     }
-    
+  ],
+  "houses": [
+    {
+      "id": 1,
+      "code": 1001,
+      "address": "123 Main Street",
+      "size": "600 sq. ft.",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "price": 100,
+      "owner": "Alice",
+      "builtYear": "2010",
+      "description": "A cozy 1-bedroom apartment with a great view...",
+      "imagePath": "../../../assets/1.jpg"
+    },
+    {
+      "id": 2,
+      "code": 1002,
+      "address": "456 Park Avenue",
+      "size": "550 sq. ft.",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "price": 250,
+      "owner": "Bob",
+      "builtYear": "2015",
+      "description": "A stylish 1-bedroom apartment in a prime location...",
+      "imagePath": "../../../assets/2.jpg"
+    },
+    {
+      "id": 3,
+      "code": 1003,
+      "address": "789 Ocean Drive",
+      "size": "700 sq. ft.",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "price": 300,
+      "owner": "Charlie",
+      "builtYear": "2012",
+      "description": "A modern 1-bedroom apartment with top-notch amenities...",
+      "imagePath": "../../../assets/3.jpg"
+    },
+    {
+      "id": 4,
+      "code": 1004,
+      "address": "101 Forest Lane",
+      "size": "500 sq. ft.",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "price": 400,
+      "owner": "David",
+      "builtYear": "2018",
+      "description": "A charming 1-bedroom apartment surrounded by nature...",
+      "imagePath": "../../../assets/4.jpg"
+    },
+    {
+      "id": 5,
+      "code": 2001,
+      "address": "246 Elm Street",
+      "size": "900 sq. ft.",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "price": 700,
+      "owner": "Emma",
+      "builtYear": "2011",
+      "description": "A spacious 2-bedroom apartment with a lovely balcony...",
+      "imagePath": "../../../assets/5.jpg"
+    },
+    {
+      "id": 6,
+      "code": 2002,
+      "address": "789 Maple Avenue",
+      "size": "850 sq. ft.",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "price": 600,
+      "owner": "Frank",
+      "builtYear": "2014",
+      "description": "A modern 2-bedroom apartment with two bathrooms...",
+      "imagePath": "../../../assets/6.jpg"
+    },
+    {
+      "id": 7,
+      "code": 2003,
+      "address": "123 Oak Road",
+      "size": "950 sq. ft.",
+      "bedrooms": 3,
+      "bathrooms": 1,
+      "price": 250,
+      "owner": "Grace",
+      "builtYear": "2013",
+      "description": "A cozy 2-bedroom apartment with natural lighting...",
+      "imagePath": "../../../assets/7.jpg"
+    },
+    {
+      "id": 8,
+      "code": 2004,
+      "address": "456 Cedar Street",
+      "size": "800 sq. ft.",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "price": 490,
+      "owner": "Henry",
+      "builtYear": "2016",
+      "description": "A comfortable 2-bedroom apartment with modern amenities...",
+      "imagePath": "../../../assets/8.jpg"
+    },
+    {
+      "id": 9,
+      "code": 3001,
+      "address": "246 Pine Avenue",
+      "size": "1200 sq. ft.",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "price": 300,
+      "owner": "Isabella",
+      "builtYear": "2012",
+      "description": "A spacious 3-bedroom apartment with two bathrooms...",
+      "imagePath": "../../../assets/9.jpg"
+    },
+    {
+      "id": 10,
+      "code": 3002,
+      "address": "789 Birch Lane",
+      "size": "1100 sq. ft.",
+      "bedrooms": 1,
+      "bathrooms": 2,
+      "price": 900,
+      "owner": "Jack",
+      "builtYear": "2013",
+      "description": "A modern 3-bedroom apartment with a beautiful view...",
+      "imagePath": "../../../assets/10.jpg"
+    },
+    {
+      "id": 11,
+      "code": 3003,
+      "address": "123 Maple Avenue",
+      "size": "1300 sq. ft.",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "price": 1000,
+      "owner": "Kate",
+      "builtYear": "2011",
+      "description": "A luxurious 3-bedroom apartment with high-end finishes...",
+      "imagePath": "../../../assets/11.jpg"
+    },
+    {
+      "id": 12,
+      "code": 3004,
+      "address": "456 Oak Road",
+      "size": "1150 sq. ft.",
+      "bedrooms": 4,
+      "bathrooms": 2,
+      "price": 650,
+      "owner": "Liam",
+      "builtYear": "2014",
+      "description": "A stylish 3-bedroom apartment with modern design...",
+      "imagePath": "../../../assets/12.jpg"
+    },
+    {
+      "code": 7001,
+      "bedrooms": 2,
+      "address": "test",
+      "size": "652 sq. ft",
+      "bathrooms": 1,
+      "price": 6982,
+      "owner": "Fafa",
+      "builtYear": "2012",
+      "description": "test",
+      "id": 13,
+      "imagePath": "../../../assets/1.jpg"
+    },
+    {
+      "code": 7002,
+      "bedrooms": 3,
+      "address": "tesssst",
+      "size": "598 sq. ft",
+      "bathrooms": 0,
+      "price": 999,
+      "owner": "Nasim",
+      "builtYear": "2019",
+      "description": "tesst",
+      "id": 14,
+      "imagePath": "../../../assets/2.jpg"
+    },
+    {
+      "code": 7003,
+      "bedrooms": 3,
+      "address": "tesssst",
+      "size": "598 sq. ft",
+      "bathrooms": 0,
+      "price": 999,
+      "owner": "Nasim",
+      "builtYear": "2019",
+      "description": "tesst",
+      "id": 15,
+      "imagePath": "../../../assets/3.jpg"
+    },
+    {
+      "code": 7004,
+      "bedrooms": 2,
+      "address": "tesssst",
+      "size": "598 sq. ft",
+      "bathrooms": 0,
+      "price": 999,
+      "owner": "saeed",
+      "builtYear": "2019",
+      "description": "tesst",
+      "id": 16,
+      "imagePath": "../../../assets/4.jpg"
+    },
+    {
+      "code": 7005,
+      "bedrooms": 2,
+      "address": "tesssst",
+      "size": "598 sq. ft",
+      "bathrooms": 0,
+      "price": 999,
+      "owner": "parham",
+      "builtYear": "2020",
+      "description": "tesst",
+      "id": 17,
+      "imagePath": "../../../assets/5.jpg"
+    },
+    {
+      "code": 7006,
+      "bedrooms": 2,
+      "address": "tesssst",
+      "size": "598 sq. ft",
+      "bathrooms": 0,
+      "price": 999,
+      "owner": "pari",
+      "builtYear": "2020",
+      "description": "tesst",
+      "id": 18,
+      "imagePath": "../../../assets/6.jpg"
+    },
+    {
+      "code": 7006,
+      "bedrooms": 2,
+      "address": "tesssst",
+      "size": "598 sq. ft",
+      "bathrooms": 0,
+      "price": 999,
+      "owner": "pari",
+      "builtYear": "2020",
+      "description": "tesst",
+      "id": 19,
+      "imagePath": "../../../assets/7.jpg"
+    },
+    {
+      "code": 7006,
+      "bedrooms": 2,
+      "address": "tesssst",
+      "size": "598 sq. ft",
+      "bathrooms": 0,
+      "price": 999,
+      "owner": "pari",
+      "builtYear": "2020",
+      "description": "tesst",
+      "id": 20,
+      "imagePath": "../../../assets/8.jpg"
+    },
+    {
+      "code": 7006,
+      "bedrooms": 2,
+      "address": "tesssst",
+      "size": "598 sq. ft",
+      "bathrooms": 0,
+      "price": 999,
+      "owner": "pari",
+      "builtYear": "2020",
+      "description": "tesst",
+      "id": 21,
+      "imagePath": "../../../assets/9.jpg"
+    },
+    {
+      "code": 7006,
+      "bedrooms": 2,
+      "address": "tesssst",
+      "size": "598 sq. ft",
+      "bathrooms": 0,
+      "price": 999,
+      "owner": "pari",
+      "builtYear": "2020",
+      "description": "tesst",
+      "id": 22,
+      "imagePath": "../../../assets/10.jpg"
+    },
+    {
+      "code": 7006,
+      "bedrooms": 2,
+      "address": "tesssst",
+      "size": "598 sq. ft",
+      "bathrooms": 0,
+      "price": 999,
+      "owner": "pari",
+      "builtYear": "2020",
+      "description": "tesst",
+      "id": 23,
+      "imagePath": "../../../assets/11.jpg"
+    },
+    {
+      "code": 7006,
+      "bedrooms": 2,
+      "address": "tesssst",
+      "size": "598 sq. ft",
+      "bathrooms": 0,
+      "price": 999,
+      "owner": "pari",
+      "builtYear": "2020",
+      "description": "tesst",
+      "id": 24,
+      "imagePath": "../../../assets/12.jpg"
+    },
+    {
+      "code": 7006,
+      "bedrooms": 2,
+      "address": "tesssst",
+      "size": "598 sq. ft",
+      "bathrooms": 0,
+      "price": 999,
+      "owner": "goli",
+      "builtYear": "2023",
+      "description": "tesst",
+      "id": 25,
+      "imagePath": "../../../assets/1.jpg"
+    },
+    {
+      "code": 7006,
+      "bedrooms": 2,
+      "address": "tesssst",
+      "size": "598 sq. ft",
+      "bathrooms": 0,
+      "price": 999,
+      "owner": "goli",
+      "builtYear": "2021",
+      "description": "new",
+      "id": 26,
+      "imagePath": "../../../assets/2.jpg"
+    }
   ]
 }

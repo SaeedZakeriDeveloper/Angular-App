@@ -9,6 +9,8 @@ import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { AuthGuard } from './guard/auth.guard';
 import { registerGuard } from './guard/register.guard';
+import { EditUserComponent } from './components/edit-user/edit-user.component';
+import { SrrvicesComponent } from './components/srrvices/srrvices.component';
 
 const routes: Routes = [
 
@@ -16,11 +18,12 @@ const routes: Routes = [
   { path: "about", component: AboutComponent },
   { path: "house", component: HouseComponent },
   { path: "admin", component: AdminComponent ,  canActivate : [AuthGuard] },
-  { path: "service", component: AdminComponent },
+  { path: "service", component: SrrvicesComponent  },
   { path: "login", component: LoginComponent },
   { path: "register", component: RegisterComponent  , canDeactivate : [registerGuard]},
+  {path : 'edit-user' , component : EditUserComponent},
   { path: "not-found", component: NotFoundComponent },
-  { path: "**", redirectTo: "not-found" },
+  { path: "**", redirectTo: "not-found" },  
 ];
 
 @NgModule({

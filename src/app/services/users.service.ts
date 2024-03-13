@@ -18,20 +18,21 @@ export class UsersService {
     return this.httpClient.get<IUser[]>(this.url  + '/users')
   }
 
-  getById(id : number): Observable<IUser[]> {
-    return this.httpClient.get<IUser[]>(this.url  + '/users/'   +  id)
+  getById(id : number): Observable<IUser> {
+    return this.httpClient.get<IUser>(this.url  + '/users/'   +  id)
   }
 
-  add(user : IUser): Observable<IUser[]>{
-    return this.httpClient.post<IUser[]>(this.url  + '/users' , user )
+  add(user : IUser): Observable<IUser>{
+    return this.httpClient.post<IUser>(this.url  + '/users' , user )
   }
 
-  upDate(id : number , user:IUser): Observable<IUser[]>{
-   return  this.httpClient.put<IUser[]>(this.url  + '/users/' + id  , user )
+  upDate(id : number , user:IUser): Observable<IUser>{
+   return  this.httpClient.put<IUser>(this.url  + '/users/' + id  , user )
   }
 
-  remove(id : number): Observable<IUser>{
-    return  this.httpClient.delete<IUser>(this.url  + '/users/' + id )
+  
+  remove(id : number): Observable<boolean>{
+    return  this.httpClient.delete<boolean>(this.url  + '/users/' + id )
   }
 
 

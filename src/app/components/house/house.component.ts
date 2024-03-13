@@ -18,6 +18,7 @@ export class HouseComponent implements OnInit {
   filteredHouse: IHouse[] = []
   bedrooms: IBedroom[] = []
   serachPanelAllHouse: string = ""
+  isLoadIndicatorVisible: boolean = false;
  
 
 
@@ -30,6 +31,7 @@ export class HouseComponent implements OnInit {
     })
   }
   houseFilterChanged() {
+    this.isLoadIndicatorVisible = true
     setTimeout(() => {
       if (this.bedroomFilter != 0 && this.priceFilter.id == 0) {
         this.filteredHouse = this.allHouses.filter((c: IHouse) => c.bedrooms == this.bedroomFilter)
@@ -53,13 +55,8 @@ export class HouseComponent implements OnInit {
           x.bathrooms.toString().includes(this.serachPanelAllHouse) ||
           x.price.toString().includes(this.serachPanelAllHouse));
       }
-
-    }, 900);
-
-
-
-
-
+      this.isLoadIndicatorVisible = false
+    }, 900)
   }
 
   onBedroomClick(id: number) {
